@@ -1,0 +1,305 @@
+/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body, html
+{
+  font-family: 'Bangers', sans-serif;
+  margin: 0;
+  background-color: #c6eaf9;
+  padding: 0;
+}
+
+h1
+{
+  font-size: 35px;
+}
+
+h2
+{
+  padding: 0;
+  font-size: 20px;
+}
+
+/*Cabecera*/
+
+header
+{
+  background: #18a9f1;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+h1, h2
+{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+
+header h2
+{
+  padding-bottom: 10px;
+}
+/*Barra de navegación*/
+
+nav
+{
+  background: #1875f1;
+  padding: 0;
+  margin: 0;
+}
+
+nav li
+{
+  display: block;
+  list-style: none;
+  padding: 5px 0;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+nav li:hover
+{
+  background: #004eb5;
+  font-weight: bold;
+}
+
+ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+a
+{
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/*Sección Principal*/
+
+section
+{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: #9fe0fb;
+  padding: 0;
+}
+
+section h2
+{
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+  width: 100%;
+}
+
+p
+{
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+}
+
+/*Goku*/
+
+.contenedor
+{
+  width: 300px;
+  height: 320px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  left: auto;
+  right: auto;
+}
+
+
+.goku
+{
+  position: relative;
+  background:url(../Goku.png) no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 320px;
+  top: 0px;
+  -webkit-animation: goku_flota ease 2s infinite;
+}
+
+@keyframes goku_flota {50% {top: 100px;} 100% {top:0px}}
+
+.con-sombra
+{
+  width: 180px;
+  margin: auto;
+}
+
+.sombra
+{
+  position: relative;
+  height: 16px;
+  background-color: #000000;
+  opacity: 0.3;
+  border-radius: 100%;
+  margin: 0px;
+  top: 80px;
+  -webkit-animation: goku_sombra ease 2s infinite;
+}
+
+@-webkit-keyframes goku_sombra {50% {margin: 0px 20% 0px 20%; opacity: 0.7;} 100% {margin: 0px 0px 0px 0px; opacity: 0.3;} }
+
+.cont-texto
+{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Presentacion
+{
+  color: #106087;
+}
+
+.texto
+{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*Pie de página*/
+
+footer
+{
+  background: #1875f1;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
+/*Media Querys*/
+
+@media all and (min-width: 480px)
+{
+  h1
+  {
+    font-size: 40px;
+  }
+  h2
+  {
+    font-size: 25px;
+  }
+  a
+  {
+    font-size: 16px;
+  }
+  nav li
+  {
+    display: inline-block;
+    padding: 10px 14px;
+  }
+  section h2
+  {
+    font-size: 25px;
+  }
+  .contenedor
+  {
+    width: 320px;
+    height: 350px;
+  }
+  .goku
+  {
+    width: 320px;
+    height: 350px;
+  }
+  .con-sombra
+  {
+    width: 200px;
+  }
+}
+@media all and (min-width: 768px)
+{
+  h1
+  {
+    font-size: 45px;
+  }
+  h2
+  {
+    font-size: 30px;
+  }
+  nav li
+  {
+    padding: 10px 20px;
+  }
+  section
+  {
+    width: 80%;
+  }
+  section h2
+  {
+    font-size: 30px;
+  }
+  .contenedor
+  {
+    width: 400px;
+    height: 450px;
+  }
+  .goku
+  {
+    width: 400px;
+    height: 450px;
+  }
+  .con-sombra
+  {
+    width: 250px;
+  }
+  footer
+  {
+    font-size: 18px;
+  }
+  @media all and (min-width: 1024px)
+  {
+    h1
+    {
+      font-size: 50px;
+    }
+    h2
+    {
+      font-size: 35px;
+    }
+    a
+    {
+      font-size: 18px;
+    }
+    section
+    {
+      width: 70%;
+    }
+    section h2
+    {
+      font-size: 35px;
+    }
+    .contenedor
+    {
+      width: 450px;
+      height: 500px;
+    }
+    .goku
+    {
+      width: 450px;
+      height: 500px;
+    }
+    .con-sombra
+    {
+      width: 300px;
+    }
+  }
+}
